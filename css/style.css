@@ -231,8 +231,7 @@ a {
   grid-template-columns: 448px 640px;
   grid-gap: 32px;
 }
-.about__content {
-}
+
 .about__title {
   text-align-last: left;
   margin-bottom: 25px;
@@ -255,7 +254,40 @@ a {
   background-size: cover;
   background-position: top center;
 }
-.popup__link {
+.gallery {
+  padding: 50px 0 105px;
+  background-color: #886239;
 }
-.popup__link-img {
+
+.gallery__top {
+  padding-right: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.gallery__link {
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: underline;
+}
+.gallery__item-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+}
+
+.slick-btn {
+  position: absolute;
+  top: -85px;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.slick-prev {
+  right: 60px;
 }

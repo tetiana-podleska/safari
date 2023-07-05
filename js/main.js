@@ -8,4 +8,23 @@ $(function () {
 
     fixedContentPos: false,
   });
+
+  $(".gallery__slider").slick({
+    prevArrow:
+      '<button type="button" class="slick-btn slick-prev"><img src="img/arrow-prev.svg" alt="nature"/></button>',
+    nextArrow:
+      '<button type="button" class="slick-btn slick-next"><img src="img/arrow-next.svg" alt="nature"/></button>',
+  });
+
+  $(".gallery__item-inner").magnificPopup({
+    delegate: "a",
+    type: "image",
+    tLoading: "Loading image #%curr%...",
+    mainClass: "mfp-img-mobile",
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1], // Will preload 0 - before current, and 1 after the current image
+    },
+  });
 });
